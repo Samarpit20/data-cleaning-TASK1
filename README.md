@@ -1,18 +1,23 @@
-# Customer Personality Analysis – Uncleaned Dataset
+# Customer Personality Analysis – Data Cleaning Task
 
-This repository contains the **raw, uncleaned dataset** for the Customer Personality Analysis task. The data is provided as-is, without any preprocessing or cleaning applied.
+This project is part of a Data Analyst Internship Task focused on cleaning and preprocessing a raw dataset.
 
-## Dataset:
-**Customer Personality Analysis** (original dataset from Kaggle)
+## Dataset Used:
+**Customer Personality Analysis** from Kaggle
 
-## Notes:
-- This dataset contains missing values, duplicates, and unstandardized text fields.
-- No modifications have been made to column names, data types, or formats.
-- Intended for use as a starting point for data cleaning and preprocessing exercises.
+## Steps Performed:
+- Loaded data using Pandas with correct separator
+- Removed rows with missing values
+- Removed duplicate records
+- Standardized text columns (`education`, `marital_status`)
+- Converted `Dt_Customer` to datetime format
+- Renamed all columns to lowercase with underscores
+- Changed `income` column to integer type
+- Exported cleaned dataset as `cleaned_customer_personality.csv`
 
-## Tools Intended for Use:
+## Tools Used:
 - Python
 - Pandas
 
 ## Output:
-A raw dataset (`customer_personality.csv`) ready for cleaning and analysis.
+A cleaned dataset ready for further analysis or modeling.
